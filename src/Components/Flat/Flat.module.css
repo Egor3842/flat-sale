@@ -1,0 +1,153 @@
+.container{
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 6px 3px rgba(221, 221, 221, 1);
+    border-radius: 25px;
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+    background-color: white;
+    margin-bottom: 20px;
+    color:black;
+    z-index:1;
+}
+.Line{
+    margin-top: 55px;
+    height:1px;
+    background-color: rgb(233, 233, 233);
+    z-index: 0;
+
+}
+.title{
+    font-size: 18px;
+    position: absolute;
+    left:5px;
+}
+.img_Container{
+    margin:0 auto;
+    top: 25px;
+    width: 50%;
+    position: relative;
+}
+
+img{
+    width: 100%;  
+    border-radius: 10%; 
+}
+.house_About{
+    position: relative;     
+}
+.area{
+    grid-area: a;
+    font-size: 12px;
+    color: #444444;
+}
+.Rooms_Amount_Container{
+    font-size: 14px;
+    grid-area: r;
+    color: #444444;
+    font-size: 12px;
+
+}
+.Numbers_About{
+    position: relative;
+    margin:0 auto;
+    top:40px;
+    height: 45px;
+    width: 50%;
+    display: grid;
+    grid-template-areas: 'rA s aA'
+                         'r s a'  ;
+    grid-template-rows: 11fr 1fr 11fr;
+    grid-template-columns:11fr 1fr 11fr;
+}
+.stickLine{
+    margin:0 auto;
+    grid-area: s;
+    width: 2.5px;
+    height: 100%;
+    background-color: rgb(233, 233, 233) ;
+}
+.room_Amount{
+    grid-area: rA;
+    color: black;
+    font-weight: 500;
+}
+.area_Amount{
+    grid-area: aA;
+    color: black;
+    font-weight: 500;
+
+
+}
+.address{
+    position: relative;
+    font-size: 14px;
+    text-align: left;
+    top:70px;    
+    left:10px;
+}
+.relationships{
+    top:75px;
+    text-align: left;
+    left:10px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: #53b374;
+}
+.heart_Container{
+    position: absolute;
+    left:80%;
+    top:85%;
+    height: 40px;
+    width: 40px;
+    border:2px solid rgba(221, 221, 221, 1);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.heart {
+    position: relative;
+    left:33%;
+    top:30%;
+    width:10px;
+    height: 15px;
+    -webkit-border-radius: 60px 60px 0 0;
+    -moz-border-radius: 60px 60px 0 0;
+    border-radius: 60px 60px 0 0;
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    transform: rotate(315deg);
+  }
+
+  .heart:before {
+    position: absolute;
+    width: 15px;
+    height: 10px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    box-shadow: 0px 3px 3px rgb(233, 233, 233);; 
+    -webkit-border-radius: 60px 60px 0 0;
+    -moz-border-radius: 60px 60px 0 0;
+    border-radius: 0 60px 60px 0;
+  }
+
+  .notClicked{
+      background-color: rgb(219, 219, 219);
+  }
+  .notClicked::before{
+      content: '';
+      background-color: rgb(219, 219, 219);;
+  }
+
+.Clicked{
+    background-color: red;
+}
+.Clicked::before{
+    content: '';
+    background-color: red;
+}

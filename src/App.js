@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import FlatsAbout from './Components/Flats/FlatsAbout';
+import Preloader from './Components/Preloader/Preloader';
 
-function App() {
+const App = () => {
+  const [loadInfo,setInfo] = useState(true);
+  setTimeout(()=>setInfo(false), 2000);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    {loadInfo ? <Preloader/>:
+     <div>
+     <FlatsAbout/>
     </div>
+     }
+    </>
   );
 }
 

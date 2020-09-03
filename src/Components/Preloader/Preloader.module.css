@@ -1,0 +1,9 @@
+.preloader{
+    height: 200px;
+    width: 500px;
+    position: relative;
+   margin:0 auto
+}
+.imgPreloader{
+    width: 100%; 
+}

@@ -1,0 +1,25 @@
+@media (min-width:1000px){
+    .widthContainer{
+        width: 1000px;
+        height: 400px;
+    }
+}
+
+@media (min-width:800px) and (max-width:999px){
+    .widthContainer{
+        width: 700px;
+        height: 850px;
+}
+}
+@media (max-width:799px){
+    .widthContainer{
+        width: 350px;
+        height: 1250px;
+    }
+}
+.container{
+    position: relative;
+    top: 75px;
+    margin:0 auto;
+    text-align: center;
+}
