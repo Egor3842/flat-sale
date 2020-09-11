@@ -2,8 +2,8 @@
     height: 200px;
     width: 500px;
     position: relative;
-   margin:0 auto
+    margin:0 auto
 }
-.imgPreloader{
+.img_Preloader{
     width: 100%; 
 }
